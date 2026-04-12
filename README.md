@@ -45,3 +45,26 @@ Any feature requests and pull requests are welcome!
 ## License
 
 The project is under [MIT license](https://choosealicense.com/licenses/mit/).
+
+### Comandes de debug liées à npm
+En cas d'erreur lors du build (```npm run dev```)
+```bash
+rm -rf node_modules package-lock.json
+```
+
+Puis réinstaller nodejs en version 18 :
+```bash
+npm install react@18 react-dom@18~
+```
+
+Puis on réinstalle les package nécessaire pour le bon fonctionnement du site web :
+```bash
+npm install
+```
+
+Puis on lance le site via la commande suivante : 
+```bash
+npm install
+```
+
+
