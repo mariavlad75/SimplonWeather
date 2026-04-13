@@ -25,8 +25,8 @@ export const App = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ cityInput }),
       });
-      const data = await res.json();
-      setWeatherData({ ...data });
+      const daily = await res.json();
+      setWeatherData({ ...daily });
       setCityInput("");
     };
     getData();
@@ -39,14 +39,14 @@ export const App = () => {
 
   return weatherData && !weatherData.message ? (
     <div className={styles.wrapper}>
-      <MainCard
+      {/* <MainCard
         city={weatherData.name}
-        country={weatherData.sys.country}
+        // country={weatherData.sys.country}
         description={weatherData.weather[0].description}
         iconName={weatherData.weather[0].icon}
         unitSystem={unitSystem}
         weatherData={weatherData}
-      />
+      /> */}
       <ContentBox>
         <Header>
           <DateAndTime weatherData={weatherData} unitSystem={unitSystem} />

@@ -64,7 +64,7 @@ npm install
 
 Puis on lance le site via la commande suivante : 
 ```bash
-npm install
+npm run dev
 ```
 
 
