@@ -14,49 +14,42 @@ export const MetricsBox = ({ weatherData, unitSystem }) => {
       <MetricsCard
         title={"Humidity"}
         iconSrc={"/icons/humidity.png"}
-        metric={weatherData.main.humidity}
+        metric={Math.round(weatherData.humidity)}
         unit={"%"}
       />
+
       <MetricsCard
         title={"Wind speed"}
         iconSrc={"/icons/wind.png"}
-        metric={getWindSpeed(unitSystem, weatherData.wind.speed)}
-        unit={unitSystem == "metric" ? "m/s" : "m/h"}
+        metric={getWindSpeed(unitSystem, Math.round(weatherData.windSpeed))}
+        unit={unitSystem === "metric" ? "m/s" : "mph"}
       />
+
       <MetricsCard
         title={"Wind direction"}
         iconSrc={"/icons/compass.png"}
-        metric={degToCompass(weatherData.wind.deg)}
+        metric={degToCompass(weatherData.windDirection)}
       />
+
       <MetricsCard
         title={"Visibility"}
         iconSrc={"/icons/binocular.png"}
         metric={getVisibility(unitSystem, weatherData.visibility)}
-        unit={unitSystem == "metric" ? "km" : "miles"}
+        unit={unitSystem === "metric" ? "km" : "miles"}
       />
+
       <MetricsCard
         title={"Sunrise"}
         iconSrc={"/icons/sunrise.png"}
-        metric={getTime(
-          unitSystem,
-          weatherData.sys.sunrise,
-          weatherData.timezone
-        )}
-        unit={getAMPM(
-          unitSystem,
-          weatherData.sys.sunrise,
-          weatherData.timezone
-        )}
+        metric={getTime(unitSystem, new Date(weatherData.sunrise))}
+        unit={getAMPM(unitSystem, new Date(weatherData.sunrise))}
       />
+
       <MetricsCard
         title={"Sunset"}
         iconSrc={"/icons/sunset.png"}
-        metric={getTime(
-          unitSystem,
-          weatherData.sys.sunset,
-          weatherData.timezone
-        )}
-        unit={getAMPM(unitSystem, weatherData.sys.sunset, weatherData.timezone)}
+        metric={getTime(unitSystem, new Date(weatherData.sunset))}
+        unit={getAMPM(unitSystem, new Date(weatherData.sunset))}
       />
     </div>
   );
