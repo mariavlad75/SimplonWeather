@@ -1,5 +1,3 @@
-[[_TOC_]]
-
 # Weather App by Maria
 
 Ce projet météo représente ma candidature pour la formation **Concepteur Développeur d'Applications-Eco**, proposée par l'organisme de fornation **Simplon**.
@@ -37,7 +35,7 @@ Voici l'affichage finale du site :
 ## Arboresence du site
 <details>
     <summary>Détail de l'arborescence du site</summary>
-    
+
 ```bash
 .
 ├── components
