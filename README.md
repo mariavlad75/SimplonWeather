@@ -1,6 +1,6 @@
 # Weather App by Maria
 
-Ce projet météo représente ma candidature pour la formation **Concepteur Développeur d'Applications-Eco**, proposée par l'organisme de fornation **Simplon**.
+Ce projet météo représente ma candidature pour la formation **Concepteur Développeur d'Applications-Eco**, proposée par l'organisme de formation **Simplon**.
 
 Voici l'affichage finale du site :  
 
