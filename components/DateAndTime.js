@@ -1,3 +1,6 @@
+// Permet de récupérer les informations de l'heure selon le retour de l'API
+// Open meteo
+
 import { getWeekDay, getTime, getAMPM } from "../services/helpers";
 import styles from "./DateAndTime.module.css";
 
