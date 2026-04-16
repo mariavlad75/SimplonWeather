@@ -1,3 +1,4 @@
+// Permet la conversion entre les KM et les miles
 import {
   kmToMiles,
   mpsToMph,
