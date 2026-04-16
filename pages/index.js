@@ -1,3 +1,11 @@
+//  Il s'agit de la partie principale de l'application météo.
+// Il sert à gérer la recherche d'une ville et afficher les données météo.
+//
+// On envoie le nom de la ville à l’API backend pour récupérer les infos météo,
+// puis on affiche les résultats avec différents composants.
+//
+// Dans le résultat, on aura l'affichages de la météo, un écran de chargement et un message en cas d'erreur
+
 import { useState, useEffect } from "react";
 
 import { MainCard } from "../components/MainCard";
