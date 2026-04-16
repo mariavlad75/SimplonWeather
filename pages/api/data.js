@@ -1,11 +1,7 @@
-// export default async function handler(req, res) {
-//   const { cityInput } = req.body;
-//   const getWeatherData = await fetch(
-//     `https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&units=metric&appid=${process.env.OPENWEATHER_API_KEY}`
-//   );
-//   const data = await getWeatherData.json();
-//   res.status(200).json(data);
-// }
+// J’ai fait cette fonction pour envoyer le nom d’une ville depuis le frontend
+//et récupérer quelques infos météo utiles.
+// le but est de récupérer plusieurs paramètres qui seront utilisés lors de l'affichage du site
+
 import { fetchWeatherApi } from "openmeteo";
 
 export default async function handler(req, res) {

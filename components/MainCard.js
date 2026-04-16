@@ -1,3 +1,6 @@
+// On récupère les informations liées à la ville cible
+// on aura ses températures en Celsius et en Farenheit
+
 import Image from "next/image";
 import { ctoF } from "../services/converters";
 import styles from "./MainCard.module.css";
