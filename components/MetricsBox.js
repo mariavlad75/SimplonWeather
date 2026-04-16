@@ -1,3 +1,10 @@
+// ce fichier a pour but d'afficher les différentes informations qui seront présenter lors du lancement
+// du site, on y retrouvera donc les infos suivantes : 
+// - Humidité
+// - Vitesse du vent 
+// - La visibilité
+// - Levé du soleil
+// - Couché du soleil
 import { degToCompass } from "../services/converters";
 import {
   getTime,
